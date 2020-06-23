@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+        background-image: url("t.jpg");
+        background-size: cover;
+    }
+
+</style>
+    
+    <meta charset="utf-8"/>
+      <title>Personal Info</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <script type="text/javascript">
+        function disp(){
+          if(document.getElementById("r1").checked){
+            document.getElementById("p1").innerHTML = " Can Make You Feel Happier <br> Can Help With Weight Loss.<br> Is Good for Your Muscles and Bones.<br>It Can Increase Your Energy Levels.<br>Can Reduce Your Risk of Chronic Disease. <br>Can Help Skin Health.<br>It Can Help Your Brain Health and Memory.<br>Can Help With Relaxation and Sleep Quality.";
+
+          }
+          if(document.getElementById("r2").checked){
+            document.getElementById("p1").innerHTML = "A long time has been passed sice I played. <br> Cricket can be played for competition or for fun. <br>Cricket is a good sport for developing overall fitness, stamina and hand–eye coordination. <br>Cricket uses a hard ball, so protective gear should be worn to avoid injury.";
+          }
+          if(document.getElementById("r3").checked){
+            document.getElementById("p1").innerHTML = "Recently developed a interest in this sport. <br>Keeps your heart rate up but takes some of the impact stress off your body. <br>Builds endurance, muscle strength and cardiovascular fitness. <br>Helps maintain a healthy weight, healthy heart and lungs. <br>Tones muscles and builds strength.";
+          }
+          if(document.getElementById("r4").checked){
+            document.getElementById("p1").innerHTML = "Used to draw many thing in school and high school.<br> Stages of art development reflect stages of child development.<br> Developing artistic independence.<br>It Can Help Your Brain Health and Memory.It Can Help With Relaxation .";
+          }
+        }
+      </script>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3" style="padding-top: 50px">
+
+            <button class="btn btn-primary btn-lg" style="padding: 10px width=100%;" onclick="location.href='index.html';">Home</button>
+          </div>
+          <div class="col-md-3" style="padding-top: 50px">
+
+            <button class="btn btn-primary btn-lg" style="padding: 10px width=100%;" onclick="location.href='Project.html';">Projects</button>
+          </div>
+          <div class="col-md-3" style="padding-top: 50px">
+
+            <button class="btn btn-success btn-lg" style="padding: 10px width=100%;" onclick="location.href='Hobbies.html';">Hobbies</button>
+          </div>
+          <div class="col-md-3" style="padding-top: 50px">
+
+            <button class="btn btn-primary btn-lg" style="padding: 10px width=100%;" onclick="location.href='edu.html';">Education</button>
+          </div>
+        </div>
+        <div style="padding-top: 100px">
+        <form>
+          <input type="radio" id="r1" name="gender" value="male" onclick="disp()"> Workout<br>
+          <input type="radio" id="r2" name="gender" value="female" onclick="disp()" style="padding-top: 15px"> Cricket<br>
+          <input type="radio" id="r3" name="gender" value="male" onclick="disp()" style="padding-top: 15px"> Swimming <br>
+          <input type="radio" id="r4" name="gender" value="male" onclick="disp()" style="padding-top: 15px"> Drawing<br>
+        </form> 
+        <br><br>
+        <p id="p1"><br></p>
+        <img src="workout.jpg" alt="Smiley face" align="left" height="240" width="240" style="padding-left: 15px">
+        <img src="cric.jpg" alt="Smiley face" align="left" height="240" width="240" style="padding-left: 15px">
+        <img src="swim.jpg" alt="Smiley face" align="left" height="240" width="240" style="padding-left: 15px">
+        <img src="draw.jpg" alt="Smiley face" align="left" height="240" width="240" style="padding-left: 15px">
+      </div>
+
+</body>
+</html>
