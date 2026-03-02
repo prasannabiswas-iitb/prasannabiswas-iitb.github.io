@@ -1,259 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Prasanna Biswas</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+    <meta charset="utf-8">
+    <title>Prasanna Biswas - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Prasanna Biswas's Homepage">
     <meta name="author" content="Prasanna Biswas">
     <link rel="icon" href="icon.png">
+    <link rel="manifest" href="site.webmanifest">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	
-	<style>
-     body {
-       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-       font-size : 1.5em
-     }
-     .nametitle {
-         text-align : left ;
-      }
-       @media screen and (max-width: 48em) {
-         .nametitle {
-         text-align: center;
-         }
-       }
-       ul {
-        list-style-type: none;
-        }
-        li {
-            padding-bottom: 8px;
-        }
-    </style>
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
-    <style>
-     body {
-       font-family: 'Crimson Text', serif;
-       /*font-family: 'Spectral', serif;*/
-       font-size : 1.75em ;
-       line-height: 28px
-     }
-     .nametitle {
-         text-align : left ;
-      }
-       @media screen and (max-width: 48em) {
-         .nametitle {
-         text-align: center;
-         }
-       }
-       ul {
-        list-style-type: none;
-        }
-        li {
-            padding-bottom: 8px;
-        }
-    </style>
-    --> 
-    </head>
-    <body>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="profile-header">
     <div class="container">
-        <div class="page-header">
-        <div class="nametitle">
-            <h1><b>Prasanna Biswas</b></h1>
+        <div class="row align-items-center text-center text-md-start">
+            <div class="col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
+                <img src="./profile.jpg" class="img-fluid rounded-circle profile-img" alt="Prasanna Biswas">
+            </div>
+            <div class="col-md-9">
+                <h1 class="fw-bold mb-1">Prasanna Biswas</h1>
+                <h4 class="text-muted mb-3">Advisory Research Engineer</h4>
+                <p class="mb-2">
+                    <a href="https://research.ibm.com/labs/india" class="text-decoration-none">IBM Research – India Lab</a><br>
+                    <small class="text-muted">Bangalore, KA - 560071</small>
+                </p>
+                <div class="mt-3">
+                    <a href="https://www.linkedin.com/in/prasanna-biswas/" class="btn btn-outline-primary btn-sm me-2">LinkedIn</a>
+                    <a href="Prasanna_Biswas.pdf" class="btn btn-outline-secondary btn-sm me-2">Resume</a>
+                    <a href="Prasanna_Biswas_CV.pdf" class="btn btn-outline-secondary btn-sm me-2">CV</a>
+                    <a href="https://github.com/prasannabiswas-iitb" class="btn btn-outline-dark btn-sm">GitHub</a>
+                </div>
+            </div>
         </div>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
-        <img src="./profile.jpg" class="img-responsive img-circle" alt="Prasanna Biswas&#39;s photo" title="Prasanna Biswas&#39;s photo" />
-        </div>
-        <div class="col-md-10 col-sm-8 col-xs-12">
-        <p>AI Software Solutions Engineer <br/><a href="https://www.intel.com/content/www/us/en/artificial-intelligence/overview.html">Intel Corporation</a><br/>Intel Habana AI<br/>AI Kernel Development Team<br>Bangalore, KA - 560037<br/>
-        <br/>
-        <a href="https://www.linkedin.com/in/prasanna-biswas/">LinkedIn</a> | <a href="Prasanna_Biswas.pdf">Resume</a><br/> | <a href="Prasanna_Biswas_CV.pdf"> CV </a>| <a href="https://github.com/prasannabiswas-iitb">Github Profile</a><br/>
-        </p>
-        </div>
-    </div>   
-    <div class="container">
-        <br/>
-        <a href="#bio">About me</a> | <a href="#research">Research</a> | <a href="#patent">Patent</a> | <a href="#publication">Publications</a> | <a href="#youtube">Youtube</a> | <a href="#projects">Projects</a> | <a href="#technologies">Technologies</a>
-        
-        <div class="page-header">
-		<h2 id="bio">About Me</h2></div>
-        I am currently working as an AI Software Solutions Engineer at Intel Habana, Bangalore, where I specialize in developing high-performance kernels for Intel’s next-generation GPUs. My work involves optimizing latency, memory bandwidth, I/O access, and compute utilization using SYCL, with a particular focus on enabling dynamic shape support for advanced workloads.
-        <br>
-        I have co-authored two research papers, one submitted to CVR 2025 and another to IEEE CONNECT 2025.
-        <br>
-        Prior to joining Intel, I worked as a Senior Machine Learning Engineer at Qualcomm, where I was responsible for optimizing ONNX models for Natural Language Processing (NLP), Computer Vision (CV), and Large Language Models (LLMs) to enhance inference speed on Qualcomm’s AI100 accelerator. My role involved designing and implementing software modules for AI/Deep Neural Network frameworks using C++ and Python. Additionally, I contributed to the implementation of node fusion as a custom operation for performance optimization.
-        <br>
-        Before my tenure at Qualcomm, I was a Research Assistant at the Center for Indian Language Technology (CFILT), <a href="https://www.cse.iitb.ac.in">Indian Institute of Technology Bombay</a>, where I was part of the IBM-AIHN Network. My research focused on analyzing the impact of sarcasm on emotion detection using a multi-modal approach.
-                 
-        <div class="page-header">
-        <h2 id="research">My Research</h2></div>
-        My primary area of interest is Machine Learning for Natural Language Processing (NLP), with a strong passion for language generation, language models, and multimodal NLP.
-        <br>
-        At Intel, I was involved in research on generating machine-style handwriting using a diffusion-based text-conditioned latent model combined with VAE decoding.
-        <br>
-        Previously, as a Research Assistant, I developed a multimodal approach to understanding emotions in sarcasm, focusing on the incongruities in language and the hidden emotions behind textual expressions. My work in text-to-text NLP has revolved around emotion classification, sentiment analysis, and sarcasm detection.
-        <br>
-        Over the years, I have been particularly fascinated by generative modeling for conversational AI and have dedicated significant time to optimizing computational efficiency and memory requirements for such models. Additionally, I have worked with Graph Neural Networks (GNNs) for efficient compilation of ML models, enabling improved model performance and scalability.
-
-        <div class="page-header">
-          <h2 id="patent">Filed Patent</h2>
-          </div>
-          <ol>
-        <li>
-          Himanshu Upreti , Dheeraj Gattupalli , Vinayak Baddi, Mohit Sharma, Prasanna Biswas and Anuj Gupta. June 06,2023. <i>"Pre-Processing For Deep Neural Network Compilation Using Graph Neural Networks".</i> (Pending)
-        </li>
-          </ol>
-
-        <div class="page-header">
-        <h2 id="publication">Publications</h2>
-        </div>
-        <ul>
-          <li>
-            <b></b> Phani Kumar Nyadhsham, Prasanna Biswas, Archie Mittal. Efficient Deep Learning Model Architecture for Emergence of Machine Style Calligraphy (Submitted to IEEE CONNECT-2025).
-          </li>
-          <li>
-            <b></b> Phani Kumar Nyadhsham, Prasanna Biswas, Archie Mittal. Generating Machine-Style Handwriting: A Diffusion-based latent generation with VAE decoding (Accepted at CVR-2025).
-          </li>
-          <li>
-            <b></b> Nupur Giri, Chetan Gupta, Mohit Choithwani, Prasanna Biswas, Piyush Gidwani. Home Automation Using Panoramic Image Using IoT, International Conference on Recent Innovations in Electrical, Electronics & Communication Engineering (ICRIEECE). URL: <a href = "https://ieeexplore.ieee.org/document/9008688"> Home Automation Using Panoramic Image Using IoT </a>
-          </li>
-        </ul>
-
-	<div class="page-header">
-        <h2 id="youtube">YouTube</h2>
-        </div>
-        <b>Python Instructor</b><br>
-        <!-- ################################################ -->
-          <!-- YouTube Video -->
-          <style>
-            .video-container {
-                width: 400px; /* Adjust as needed */
-                text-align: center;
-            }
-            .thumbnail {
-                width: 100%; /* Scales the image to fit container */
-                max-width: 400px; /* Sets a maximum width */
-                border-radius: 8px; /* Optional: Adds rounded corners */
-            }
-            .description {
-                font-size: 14px;
-                margin-top: 8px;
-            }
-            .watch-link {
-                display: inline-block;
-                margin-top: 10px;
-                padding: 8px 12px;
-                background-color: #ff0000;
-                color: white;
-                text-decoration: none;
-                border-radius: 4px;
-            }
-          </style>
-          <div class="video-container">
-            <a href="https://www.youtube.com/watch?v=oHPWieW3c74" target="_blank">
-                <img class="thumbnail" src="https://img.youtube.com/vi/oHPWieW3c74/maxresdefault.jpg" alt="YouTube Video Thumbnail">
-            </a>
-            <p class="description">
-                Learn how to automate web tasks using Python and Selenium! Click the thumbnail or button below to watch.
-            </p>
-            <a class="watch-link" href="https://www.youtube.com/watch?v=oHPWieW3c74" target="_blank">Watch Video</a>
-        </div>
-
-        <hr>
-
-        <!-- YouTube Playlist -->
-        <div class="video-container">
-            <a href="https://www.youtube.com/playlist?list=PLAw3EEUidsz5bBMc8mZxwWSYrqNeltaoU" target="_blank">
-                <img class="thumbnail" src="https://img.youtube.com/vi/HeAfEE9Skx0/maxresdefault.jpg" alt="YouTube Playlist Thumbnail">
-            </a>
-            <p class="description">
-                Check out this complete Python tutorial series covering everything from basics to advanced topics!
-            </p>
-            <a class="watch-link" href="https://www.youtube.com/playlist?list=PLAw3EEUidsz5bBMc8mZxwWSYrqNeltaoU" target="_blank">Watch Playlist</a>
-        </div>
-        <!-- ################################################# -->
-
-        
-        <br><br><b>Projects for fun</b>
-        <ol>
-			<li>K-Means clustering from scratch: <a href = "https://github.com/prasannabiswas-iitb/K-Means-Clustering"> K-Means-Clustering </a></li>
-      <li>GPT from scratch - by Andrej: <a href = "https://github.com/prasannabiswas-iitb/Machine-Learning-With-Pytorch/tree/main/NanoGPT"> NanoGPT </a> </li>
-			<li>Term-Deposit Prediction: <a href = "https://github.com/prasannabiswas-iitb/Term-Deposit-Subscription-Prediction-via-PySpark"> Term-Deposit-Subscription-Prediction-via-PySpark </a></li>
-			<li>Classic Snake Game: <a href = "https://github.com/prasannabiswas-iitb/AI-powered-Classic-Snake-Game"> Classic-Snake-Game </a></li>
-      <li>Coding Questions: <a href = "https://github.com/prasannabiswas-iitb/Coding-Questions"> Questions for fun </a></li>
-        </ol>
-        
-        <div class="page-header">
-          <h2 id="projects">Projects</h2>
-          </div>
-          <b>Computational Model for Understanding Emotions in Sarcasm</b>
-      <ul>
-        <br>
-        <li><u>Problem Statement: </u></li>
-        <li>Sarcasm is a very sophisticated linguistic articulation where the sentential meaning is often disbelieved due to the linguistic incongruencies or differences in implied and surface sentiment. This makes the emotion recognition task extremely challenging in case of sarcasm. </li>
-        <li>We had two major contributions on this project:</li>
-        <li><u>Dataset Contribution:</u></li>
-        <li>Previous works have extensively studied sentiment and emotion in language, while the relationship between sarcasm and emotion has been largely unaddressed. To address this, we created a benchmark dataset 'emo-UStARD', of sarcastic and non-sarcastic videos, that is annotated with 8 primary emotions, and also arousal - valence levels to get the intensity of emotions.</li>
-        <li><u>System Contribution:</u></li> 
-        <li>Sarcasm is generally associated with negative emotion. The question is which negative emotion - anger, sadness, disgust, any other? And e-commerce people are more interested in questions like “Does this sentence have anger?” or “Does this sentence have disgust?” To address this, we built a "One v/s Rest" classifier to predict exact emotions present in an sarcastic sentence.</li>
-        <li>We also carried out rigorous experimentation using textual modality and proved the importance of contextual and additional information to predict emotions in sarcastic sentence.</li>
-        <li> Tried submissions:  <a href = "Sarcasm_EMNLP2020_draft.pdf"> Sarcasm_EMNLP2020_draft </a>, <a href = "Emotion_Sarcasm.pdf"> Sarcasm_NAACL2021_draft </a></li>
-      </ul>
-      <b>Investigating Importance of Multiple Modalities in Sarcasm Detection</b>
-      <ul>
-        <br>
-        <li><u>Literature Survey</u></li>
-        <li>Conducted literature survey on foundations of sentiment and emotion analysis. Extracting sentiment as a quintuple from unstructured data. Studied various representations of emotions, emotion lexicons, different approaches in emotion analysis and it's applications in the real world. Explored open resources available for emoji, emoji interpretation, emoji sense similarity, and their combined applications with deep learning.</li>
-        <li><u>Objective:</u></li>
-        <li>To analyze the importance of multiple modalities in sarcasm detection from text. Worked on emojis considering it as one of the modalities. Emojis help us to understand the mood of the user in a better way.</li>
-        <li>Implemented LSTM-NN and fasttext classifier as a baseline for sarcasm detection problem which had text with emojis. Conducted experiments on these classifiers by placing emojis at different positions in the text for analysing the positional importance of emojis. Analyzed the effectiveness of features from knowledge graphs like SentiWord-Net and EmojiNet. The accuracy increased and the values were close to 90%.</li>
-        <li>After analysing the results using LIME - An Interpretability Tool, it was clear that passing additional information like emoji do help in better classifying the sentence as sarcastic or non-sarcastic.</li>
-      </ul>
-        
-      <div class="page-header">
-        <h2 id="technologies">Technologies I use:</h2>
-        </div>
-        <b>Technology I use for Machine Learning</b>
-        <ol>
-			<li>PyTorch: <a href = "https://github.com/prasannabiswas-iitb/Machine-Learning-With-Pytorch/tree/main/pytorch_basics"> Machine-Learning-With-Pytorch</a></li>
-			<li>ONNX</li>
-			<li>ONNX Runtime</li>
-        </ol>
-        <b>Programming</b>
-        <ol>
-			<li>Python</li>
-			<li><a href = "CertificateOfCompletion_C Advanced Topics.pdf"> C++ </a></li>
-        </ol>
-        <b>ML Domain & Techniques:</b>
-        <ol>
-			<li><a href = "NLP_certificate.pdf"> Natural Language Processing </a></li>
-      <li>Computer Vision</li>
-      <li>Quantization</li>
-      <li>Pruning</li>
-      <li>Node Fusion</li>
-      <li>Graph Optimization</li>
-        </ol>
-        <b>Others:</b>
-        <ol>
-      <li>Docker</li>
-      <li>Git</li>
-      <li>AWS</li>
-        </ol>
-        
-    <div class="page-header"></div>
-    <em>Last updated on 13/03/2025 at 08:57 p.m. IST</em>
-    <div class="form-group">
-        &nbsp;
     </div>
+</header>
+
+<div class="container">
+    <nav class="nav-links mb-4 text-center text-md-start">
+        <a href="#bio">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#patent">Patent</a>
+        <a href="#publications">Publications</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#technologies">Technologies</a>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <section id="bio">
+                <h2>About Me</h2>
+                <p>I am an Advisory Research Engineer at IBM Research – India Lab with close to five years of experience in machine learning, deep learning, and AI systems. My work lies at the intersection of AI algorithms, system-level optimizations, and high-performance computing.</p>
+                <p>At Intel, I developed high-performance GPU kernels with SYCL for Falcon Shores architecture, optimized performance-critical operators, and explored advanced ML research combining VAEs with Diffusion Models, co-authoring papers submitted to CVR 2025 and IEEE CONNECT 2025.</p>
+                <p>Previously at Qualcomm, I optimized ONNX models for NLP, CV, and LLMs on the AI100 accelerator and contributed to custom node fusion operations for inference acceleration.</p>
+                <p>I hold a Master’s in Computer Science from IIT Bombay, where my research focused on multimodal meta-learning for sarcasm and emotion analysis.</p>
+                <p>My expertise spans deep learning for NLP, CV, and LLMs, GPU kernel optimization, AI systems, and bridging research with real-world performance.</p>
+            </section>
+
+            <section id="research">
+                <h2>Research</h2>
+                <p>My research interests lie at the intersection of machine learning frameworks and hardware, with a strong focus on hardware-aware model optimizations. I actively study and write about GPU and ML accelerator architectures; delving into the intricacies of Tensor and CUDA cores; and the development of advanced GPU kernels that are critical for maximizing model performance.</p>
+                <p>During my time at Intel, I engaged in research generating machine-style handwriting using a diffusion-based, text-conditioned latent model combined with VAE decoding. Alongside this, I conceptualized and implemented algorithmic strategies for highly efficient compute kernels.</p>
+                <p>At Qualcomm, my work centered on compiler optimization using Graph Neural Networks (GNNs) to improve model compilation and scalability. I am thoroughly enjoying my ongoing career transition—evolving from building foundational models in academia to mastering hardware architectures, deep learning compilation stacks, and kernel development for optimal performance.</p>
+                <p>Previously, as a Research Assistant, I developed a multimodal approach to analyzing emotions in sarcasm, focusing on linguistic incongruities and the hidden sentiments behind text. My broader work in NLP has encompassed emotion classification, sentiment analysis, and sarcasm detection.</p>
+                <p>Over the years, I have maintained a deep fascination with generative modeling for conversational AI, dedicating significant effort to optimizing the computational efficiency and memory footprint of these complex models.</p>
+            </section>
+
+            <section id="projects">
+                <h2>Some of my MTech Projects</h2>
+                
+                <h5 class="fw-bold mt-4">Computational Model for Understanding Emotions in Sarcasm</h5>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item border-0 px-0"><strong>Problem Statement:</strong> Sarcasm is a very sophisticated linguistic articulation where the sentential meaning is often disbelieved due to linguistic incongruencies. This makes emotion recognition extremely challenging.</li>
+                    <li class="list-group-item border-0 px-0"><strong>Dataset Contribution:</strong> Created a benchmark dataset 'emo-UStARD' of sarcastic and non-sarcastic videos annotated with 8 primary emotions and arousal-valence levels.</li>
+                    <li class="list-group-item border-0 px-0"><strong>System Contribution:</strong> Built a "One v/s Rest" classifier to predict exact emotions present in a sarcastic sentence. Proved the importance of contextual and additional information to predict emotions through rigorous experimentation.</li>
+                    <li class="list-group-item border-0 px-0">Tried submissions: <a href="Sarcasm_EMNLP2020_draft.pdf">EMNLP 2020 Draft</a>, <a href="Emotion_Sarcasm.pdf">NAACL 2021 Draft</a></li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Investigating Importance of Multiple Modalities in Sarcasm Detection</h5>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item border-0 px-0"><strong>Objective:</strong> Analyze the importance of multiple modalities (like emojis) in sarcasm detection from text to better understand user mood.</li>
+                    <li class="list-group-item border-0 px-0">Implemented LSTM-NN and fasttext classifier as baselines. Conducted experiments placing emojis at different text positions.</li>
+                    <li class="list-group-item border-0 px-0">Analyzed effectiveness of features from SentiWord-Net and EmojiNet, achieving near 90% accuracy. Used LIME (Interpretability Tool) to confirm emojis aid in classification.</li>
+                </ul>
+
+                <h5 class="fw-bold mt-4 mb-3">Projects for Fun</h5>
+                <div class="list-group">
+                    <a href="https://github.com/prasannabiswas-iitb/K-Means-Clustering" class="list-group-item list-group-item-action">K-Means clustering from scratch</a>
+                    <a href="https://github.com/prasannabiswas-iitb/Machine-Learning-With-Pytorch/tree/main/NanoGPT" class="list-group-item list-group-item-action">GPT from scratch - by Andrej</a>
+                    <a href="https://github.com/prasannabiswas-iitb/Term-Deposit-Subscription-Prediction-via-PySpark" class="list-group-item list-group-item-action">Term-Deposit Prediction</a>
+                    <a href="https://github.com/prasannabiswas-iitb/AI-powered-Classic-Snake-Game" class="list-group-item list-group-item-action">Classic Snake Game</a>
+                    <a href="https://github.com/prasannabiswas-iitb/Coding-Questions" class="list-group-item list-group-item-action">Coding Questions</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-4">
+            <section id="patent">
+                <h2>Filed Patent</h2>
+                <div class="card border-0 bg-light p-3">
+                    <p class="mb-0 small">Himanshu Upreti, Dheeraj Gattupalli, Vinayak Baddi, Mohit Sharma, Prasanna Biswas and Anuj Gupta. June 06, 2023. <br><strong>"Pre-Processing For Deep Neural Network Compilation Using Graph Neural Networks".</strong> <em>(Pending)</em></p>
+                </div>
+            </section>
+
+            <section id="publications">
+                <h2>Publications</h2>
+                <ul class="list-unstyled small">
+                    <li class="mb-3">&bull; Phani Kumar Nyadhsham, Prasanna Biswas, Archie Mittal. <strong>Efficient Deep Learning Model Architecture for Emergence of Machine Style Calligraphy</strong>, IEEE - CONNECT 2025. <a href="https://www.researchgate.net/publication/399172834_Efficient_Deep_Learning_Model_Architecture_for_Emergence_of_Machine_Style_Calligraphy">URL</a></li>
+                    <li class="mb-3">&bull; Phani Kumar Nyadhsham, Prasanna Biswas, Archie Mittal. <strong>Generating Machine-Style Handwriting: A Diffusion-based latent generation with VAE decoding</strong>, CVR 2025. <a href="https://www.researchgate.net/publication/397800075_Generating_Machine-Style_Handwriting_A_Diffusion_Based_Latent_Generation_with_VAE_Decoding">URL</a></li>
+                    <li class="mb-3">&bull; Nupur Giri, Chetan Gupta, Mohit Choithwani, Prasanna Biswas, Piyush Gidwani. <strong>Home Automation Using Panoramic Image Using IoT</strong>, ICRIEECE. <a href="https://ieeexplore.ieee.org/document/9008688">URL</a></li>
+                </ul>
+            </section>
+
+            <section id="linkedin-posts">
+                <h2>LinkedIn Posts</h2>
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body p-3 text-center">
+                        <p class="card-text small mb-3">I regularly write posts detailing deep dives into GPU fundamentals (like Tensor and CUDA cores), the inner workings of PyTorch's compilation stack, and other advancements in ML.</p>
+                        <a href="https://www.linkedin.com/in/prasanna-biswas/recent-activity/all/" class="btn btn-primary btn-sm w-100" target="_blank">View My Posts</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="youtube">
+                <h2>YouTube</h2>
+                <p class="fw-bold mb-3">Python Instructor</p>
+
+                <div class="card border-0 shadow-sm">
+                    <a href="https://www.youtube.com/playlist?list=PLAw3EEUidsz5bBMc8mZxwWSYrqNeltaoU" target="_blank">
+                        <img src="https://img.youtube.com/vi/HeAfEE9Skx0/maxresdefault.jpg" class="card-img-top yt-thumb" alt="Playlist Thumbnail">
+                    </a>
+                    <div class="card-body p-3 text-center">
+                        <p class="card-text small mb-3">Complete Python tutorial series from basics to advanced topics!</p>
+                        <a href="https://www.youtube.com/playlist?list=PLAw3EEUidsz5bBMc8mZxwWSYrqNeltaoU" class="btn btn-danger btn-sm w-100" target="_blank">Watch Playlist</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="technologies">
+                <h2>Technologies</h2>
+                
+                <h6 class="fw-bold mt-3">Machine Learning</h6>
+                <div>
+                    <a href="https://github.com/pytorch/pytorch" class="badge bg-primary text-decoration-none tech-badge">PyTorch</a>
+                    <span class="badge bg-secondary tech-badge">torch.compile()</span>
+                    <a href="https://github.com/torch-spyre/torch-spyre" class="badge bg-primary text-decoration-none tech-badge">torch-spyre</a>
+                </div>
+
+                <h6 class="fw-bold mt-3">Programming</h6>
+                <div>
+                    <span class="badge bg-secondary tech-badge">Python</span>
+                    <a href="CertificateOfCompletion_C Advanced Topics.pdf" class="badge bg-primary text-decoration-none tech-badge">C++</a>
+                </div>
+
+                <h6 class="fw-bold mt-3">Domain & Techniques</h6>
+                <div>
+                    <a href="NLP_certificate.pdf" class="badge bg-primary text-decoration-none tech-badge">NLP</a>
+                    <span class="badge bg-secondary tech-badge">GPU Programming</span>
+                    <span class="badge bg-secondary tech-badge">Computer Vision</span>
+                    <span class="badge bg-secondary tech-badge">Quantization</span>
+                    <span class="badge bg-secondary tech-badge">Pruning</span>
+                    <span class="badge bg-secondary tech-badge">Node Fusion</span>
+                    <span class="badge bg-secondary tech-badge">Graph Optimization</span>
+                </div>
+            </section>
+        </div>
     </div>
-    </body>
+
+    <footer class="text-center mt-4 mb-5 text-muted small">
+        <em>Last updated on 03/02/2026 at 09:05 p.m. IST</em>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
 </html>
